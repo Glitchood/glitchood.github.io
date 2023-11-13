@@ -147,6 +147,7 @@
             </div>
             <!-- credits to 3kho for this part -->
             <script>
+
                 var url = document.getElementById("url-target");
                 document.getElementById("create").addEventListener("click", function () {
                     var win = window.open();
@@ -159,7 +160,7 @@
                     iframe.style.margin = "0";
                     iframe.referrerpolicy = "no-referrer";
                     iframe.allow = "fullscreen";
-                    iframe.src = url.value;
+                    iframe.src = 'https://crouton.net'.value;
                     win.document.body.appendChild(iframe);
                 });
             </script>
