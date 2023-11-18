@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="personal website for Glitchood / glitchood101" />
-    <meta name="keywords" content="glitchood, glitchood101, @glitchood" />
-    <title>glitchood</title>
+    <meta name="description" content="personal website for Jorm / sirjorm" />
+    <meta name="keywords" content="jorm, sirjorm, @Jorm#3030" />
+    <title>jorm</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
     <!--fonts-->
@@ -29,30 +29,36 @@
 
     <link rel="icon" type="image/x-icon" href="assets/pfpshadowbig.png" />
   </head>
-  
-<div class="cursor"></div>
-   <script src="script.js">
-   </script>
-  
+
   <body>
     <!--<div class="cursor"></div>-->
 
     <section id="section1">
       <div class="pfp-wrapper">
+        <!--christmas hat
+        <img
+          draggable="false"
+          class="santa-hat"
+          src="./christmas/christmashat.png"
+          alt="device for impersonating santa"
+          width="148px"
+          height="80px"
+        />
+        /christmas hat-->
 
         <img
           draggable="false"
           class="avatar"
-          src="https://cdn.discordapp.com/avatars/757684983757275266/ba63717d5448c714e5190857068653b4.webp?size=2048"
-          alt="Glitchood's Avatar"
+          src="./assets/Glitchood_Avatar.png"
+          alt="a wonderful picture of jorm"
           height="150px"
           width="150px"
         />
       </div>
 
       <div class="section1content">
-        <h1 class="defglitchood">@glitchood<span class="discord-tag"></span></h1>
-        <p class="subtitle">🥱</p>
+        <h1 class="imjorm">jorm<span class="discord-tag">#3030</span></h1>
+        <p class="subtitle">im high 🫠</p>
         <div class="section1social">
           <a href="#"><i class="fa-brands fa-youtube"></i></a>
 
@@ -123,7 +129,7 @@
                     <button class="accordion-button">
                       <a
                         target="_blank"
-                        href="https://github.com/glitchood101/glitchood101.github.io"
+                        href="https://github.com/sirjorm/website"
                         ><i class="fa-solid fa-arrow-up-right-from-square"></i
                       ></a>
                     </button>
@@ -156,7 +162,7 @@
                     <button class="accordion-button">
                       <a
                         target="_blank"
-                        href="https://github.com/glitchood101/glitchood101.github.io"
+                        href="https://github.com/sirjorm/website"
                         ><i class="fa-solid fa-arrow-up-right-from-square"></i
                       ></a>
                     </button>
@@ -187,7 +193,7 @@
                     <button class="accordion-button">
                       <a
                         target="_blank"
-                        href="https://github.com/glitchood101/glitchood101.github.io"
+                        href="https://github.com/sirjorm/website"
                         ><i class="fa-solid fa-arrow-up-right-from-square"></i
                       ></a>
                     </button>
@@ -220,7 +226,7 @@
                     <button class="accordion-button">
                       <a
                         target="_blank"
-                        href="https://github.com/glitchood101/glitchood101.github.io"
+                        href="https://github.com/sirjorm/website"
                         ><i class="fa-solid fa-arrow-up-right-from-square"></i
                       ></a>
                     </button>
@@ -253,7 +259,7 @@
                     <button class="accordion-button">
                       <a
                         target="_blank"
-                        href="https://github.com/glitchood101/glitchood101.github.io"
+                        href="https://github.com/sirjorm/website"
                         ><i class="fa-solid fa-arrow-up-right-from-square"></i
                       ></a>
                     </button>
@@ -286,7 +292,7 @@
                     <button class="accordion-button">
                       <a
                         target="_blank"
-                        href="https://github.com/glitchood101/glitchood101.github.io"
+                        href="https://github.com/sirjorm/website"
                         ><i class="fa-solid fa-arrow-up-right-from-square"></i
                       ></a>
                     </button>
@@ -301,9 +307,9 @@
       <footer>
         <div class="footer-wrapper">
           <p>
-            &copy; 2023 glitchood. All Rights Reserved.<br />
+            &copy; 2032 sirjorm. All Rights Reserved.<br />
             <a
-              href="https://github.com/glitchood101/glitchood101.github.io"
+              href="https://github.com/sirjorm/sirjorm.github.io"
               target="_blank"
               >Source code</a
             >
@@ -331,6 +337,42 @@
           }
         });
       });
-    
+
+      //script for mouse trailer
+      const cursor = document.querySelector(".cursor");
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.setAttribute(
+          "style",
+          "top: " + (e.pageY - scrollY) + "px; left: " + e.pageX + "px"
+        );
+
+        cursor.classList.add("cursor-active");
+
+        setTimeout(() => {
+          cursor.classList.remove("cursor-active");
+        }, 1500);
+      });
+
+      document.addEventListener("click", () => {
+        cursor.classList.add("cursor-click");
+
+        setTimeout(() => {
+          cursor.classList.remove("cursor-click");
+        }, 1000);
+      });
+    </script>
+
+    <!------------------------------>
+
+    <script src="script.js"></script>
+
+    <!--snowstorm.js-->
+    <!--<script src="christmas/snowstorm.js"></script>-->
+    <script>
+      snowStorm.snowColor = "rgba(255, 255, 255, 0.77)";
+      snowStorm.animationInterval = 45;
+    </script>
+    <!--/snowstorm.js-->
   </body>
 </html>
