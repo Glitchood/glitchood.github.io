@@ -341,32 +341,7 @@
           }
         });
       });
-
-      //script for mouse trailer
-      const cursor = document.querySelector(".cursor");
-
-      document.addEventListener("mousemove", (e) => {
-        cursor.setAttribute(
-          "style",
-          "top: " + (e.pageY - scrollY) + "px; left: " + e.pageX + "px"
-        );
-
-        cursor.classList.add("cursor-active");
-
-        setTimeout(() => {
-          cursor.classList.remove("cursor-active");
-        }, 1500);
-      });
-
-      document.addEventListener("click", () => {
-        cursor.classList.add("cursor-click");
-
-        setTimeout(() => {
-          cursor.classList.remove("cursor-click");
-        }, 1000);
-      });
-    </script>
-
+      
     <!------------------------------>
 
     <script src="script.js"></script>
